@@ -1,0 +1,18 @@
+template<class ItemType>
+bool BinarySearchTree<ItemType>::add(const ItemType& newData)
+{
+    auto newNodePtr = std::make_shared<BinaryNode<ItemType>>(newData);
+    rootPtr = placeNode(rootPtr, newNodePtr);
+
+    return true;
+}  // end add
+
+keywords
+template
+delete 
+operator 
+bool
+typeid
+auto
+char
+wchar_t
